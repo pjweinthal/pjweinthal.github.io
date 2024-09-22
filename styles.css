@@ -1,5 +1,5 @@
 body {
     margin: 0;
-    background: light-dark();
+    background: light-dark(#efedea, #223a2c);
     text-align: center;
 }
