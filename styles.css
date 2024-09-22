@@ -6,19 +6,10 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     text-align: center;
-}
-
-/* Dark mode support */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-        color: #efefef;
-    }
+    padding: 20px;
 }
 
 /* Header */
@@ -33,7 +24,7 @@ h1 {
 
 .subtitle {
     font-size: 1.2rem;
-    color: #555;
+    color: inherit; /* Inherits default color */
 }
 
 /* Sections */
@@ -44,18 +35,11 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #333;
-}
-
-@media (prefers-color-scheme: dark) {
-    h2 {
-        color: #efefef;
-    }
 }
 
 /* Links */
 a {
-    color: #007bff;
+    color: blue; /* Default link color */
     text-decoration: none;
 }
 
@@ -63,22 +47,8 @@ a:hover {
     text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-    a {
-        color: #55acee;
-    }
-}
-
 /* Footer */
 footer {
-    background-color: #333;
-    color: #ffffff;
     padding: 20px;
     font-size: 0.9rem;
-}
-
-@media (prefers-color-scheme: dark) {
-    footer {
-        background-color: #444;
-    }
 }
