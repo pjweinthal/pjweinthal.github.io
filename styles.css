@@ -5,71 +5,57 @@
     box-sizing: border-box;
 }
 
-/* Apply a modern font and a clean layout */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: light-dark(#ffffff, #1a1a1a);
-    color: light-dark(#333333, #efefef);
+    background-color: #f0f0f0;
+    color: #333;
     line-height: 1.6;
     text-align: center;
 }
 
-/* Header style */
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #efefef;
+    }
+}
+
+/* Header */
 header {
-    background-color: light-dark(#f4f4f4, #222);
-    padding: 20px 0;
-    border-bottom: 2px solid light-dark(#333, #444);
+    padding: 20px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: light-dark(#333333, #ffffff);
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: light-dark(#555555, #cccccc);
+    color: #555;
 }
 
-/* Container for content alignment */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Main section styles */
-main {
-    padding: 40px 20px;
+/* Sections */
+section {
+    padding: 40px 0;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: light-dark(#333, #efefef);
+    color: #333;
 }
 
-h3 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    color: light-dark(#444, #f4f4f4);
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: #efefef;
+    }
 }
 
-/* Resume section */
-.resume p, .resume ul {
-    text-align: left;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-ul {
-    list-style-type: disc;
-    padding-left: 40px;
-}
-
+/* Links */
 a {
-    color: light-dark(#007bff, #55acee);
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -77,21 +63,22 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Projects section */
-.projects ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.projects ul li {
-    margin-bottom: 10px;
+@media (prefers-color-scheme: dark) {
+    a {
+        color: #55acee;
+    }
 }
 
 /* Footer */
 footer {
-    background-color: light-dark(#333, #444);
-    color: light-dark(#ffffff, #efefef);
-    padding: 20px 0;
+    background-color: #333;
+    color: #ffffff;
+    padding: 20px;
     font-size: 0.9rem;
-    border-top: 2px solid light-dark(#ccc, #555);
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        background-color: #444;
+    }
 }
