@@ -6,6 +6,6 @@
       margin: 0;
       background: light-dark(#706d68, #223a2c);
       text-align: center;
-      color: light-dark(#333b3c, #efefec); /* Ensure text color changes accordingly */
+      color: light-dark(#333b3c, #6a6a5b); /* Ensure text color changes accordingly */
   }
   
