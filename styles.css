@@ -1,11 +1,97 @@
-:root {
-    color-scheme: light dark;
-  }
-  
-  body {
-      margin: 0;
-      background: light-dark(#706d68, #223a2c);
-      text-align: center;
-      color: light-dark(#333b3c, #6a6a5b); /* Ensure text color changes accordingly */
-  }
-  
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a modern font and a clean layout */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: light-dark(#ffffff, #1a1a1a);
+    color: light-dark(#333333, #efefef);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header style */
+header {
+    background-color: light-dark(#f4f4f4, #222);
+    padding: 20px 0;
+    border-bottom: 2px solid light-dark(#333, #444);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: light-dark(#333333, #ffffff);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: light-dark(#555555, #cccccc);
+}
+
+/* Container for content alignment */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main section styles */
+main {
+    padding: 40px 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: light-dark(#333, #efefef);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: light-dark(#444, #f4f4f4);
+}
+
+/* Resume section */
+.resume p, .resume ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+a {
+    color: light-dark(#007bff, #55acee);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Projects section */
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: light-dark(#333, #444);
+    color: light-dark(#ffffff, #efefef);
+    padding: 20px 0;
+    font-size: 0.9rem;
+    border-top: 2px solid light-dark(#ccc, #555);
+}
